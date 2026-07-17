@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>テストサイト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>テスト用Webサイト</h1>
+    <p>動作確認のためのシンプルな静的サイトです。</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>カウンター</h2>
+      <p>ボタンを押すとカウントが増えます。</p>
+      <p class="count" id="count">0</p>
+      <button id="increment">+1</button>
+      <button id="reset">リセット</button>
+    </section>
+
+    <section class="card">
+      <h2>フォームテスト</h2>
+      <form id="test-form">
+        <label for="name">名前</label>
+        <input type="text" id="name" name="name" placeholder="山田太郎">
+        <button type="submit">送信</button>
+      </form>
+      <p id="form-result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 myClaude テストサイト</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
