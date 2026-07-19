@@ -7,12 +7,14 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   background-color: #f5f5f7;
   color: #1d1d1f;
+  /* iOSでホーム画面から起動した際、ノッチ/ホームインジケータに内容が隠れないようにする */
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 header {
   background-color: #1d1d1f;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: calc(2rem + env(safe-area-inset-top)) 1rem 2rem;
   text-align: center;
 }
 
