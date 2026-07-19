@@ -39,3 +39,11 @@ Web App ManifestとService Workerに対応しており、Safari(iOS)から次の
 2. 共有ボタン → 「ホーム画面に追加」を選択
 
 App Storeへの配信は行っていません。あくまでSafariの機能を使ったホーム画面ショートカット(PWA)です。
+
+### GitHub Pagesでの公開
+
+`.github/workflows/pages.yml`により、`main`ブランチへのpush時にリポジトリ内容をGitHub Pagesへ自動デプロイします。
+初回のみ、リポジトリの`Settings > Pages > Build and deployment > Source`を「GitHub Actions」に設定してください。
+設定後は次のURLでiPhoneの実機Safariからアクセスできます。
+
+`https://<GitHubユーザー名>.github.io/myClaude/mandala-art/`
