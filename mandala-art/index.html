@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>マンダラート</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>マンダラート</h1>
+    <p>中央にテーマを、周囲8マスに連想語を書き込んで発想を広げるノートアプリです。</p>
+  </header>
+
+  <main>
+    <nav class="toolbar">
+      <button id="back-btn" class="ghost-btn" title="ひとつ前のページへ戻る">← 戻る</button>
+      <ol id="breadcrumb" class="breadcrumb"></ol>
+      <div class="toolbar-actions">
+        <button id="map-btn" class="ghost-btn">全体マップ</button>
+        <button id="reset-btn" class="ghost-btn danger">新しいノート</button>
+      </div>
+    </nav>
+
+    <section id="grid-view">
+      <div id="grid" class="mandala-grid"></div>
+      <p id="status-message" class="status-message" aria-live="polite"></p>
+      <button id="expand-btn" class="primary-btn" hidden>この8つの語で新しいページを作成する</button>
+    </section>
+
+    <section id="map-view" hidden>
+      <h2>全体マップ</h2>
+      <p class="map-hint">テーマ名をクリックすると、そのページを開きます。</p>
+      <div id="map-tree" class="map-tree"></div>
+      <button id="close-map-btn" class="ghost-btn">閉じる</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>入力内容はこのブラウザに自動保存されます。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
